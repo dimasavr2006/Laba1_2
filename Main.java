@@ -30,6 +30,7 @@ static double[][] z = new double[z1.length][x.length];
         return gen;
     }
 
+
     public static short[] calculation1 (short[] z1) {
 
         for (short i = 0; i < z1.length; i++) {
@@ -50,23 +51,7 @@ static double[][] z = new double[z1.length][x.length];
         return x;
     }
 
-//    public static  calculation3 () {
-//        double[][] z = new double[8][13];
-//        for (int i = 0; i < 8; i++) {
-//            for (int j = 0; j < 13; j++) {
-//                z[i][j] = generator();
-//            }
-//        }
-//    }
-//
-//    public static void sender(String[] args){
-//        for (int i = 0; i < 8; i++) {
-//            for (int j = 0; j < 13; j++) {
-//                System.out.printf("%.4f", z[i], z[j]);
-//            }
-//        }
-//
-//    }
+
 public static double sender_calc(short[] z1[], float[] x[]) {
 
         for (short i = 0; i < z1.length; i++) {
@@ -79,7 +64,8 @@ public static double sender_calc(short[] z1[], float[] x[]) {
 
 
     public static void main(String[] args) {
-        System.out.println(sender_calc((short[]) z1, (float[]) x[]));
+        System.out.println(sender_calc((short[]) z1, float[] x[]));
+        System.out.println("Hello World!");
     }
 
 
