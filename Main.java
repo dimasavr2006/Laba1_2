@@ -1,3 +1,4 @@
+
 import java.util.Random;
 
 import static java.lang.Math.*;
@@ -52,7 +53,7 @@ static double[][] z = new double[z1.length][x.length];
     }
 
 
-public static double sender_calc(short[] z1[], float[] x[]) {
+public static void sender_calc(short[] z1[], float[] x[]) {
 
         for (short i = 0; i < z1.length; i++) {
             for (int j = 0; j < x.length; j++) {
@@ -64,8 +65,11 @@ public static double sender_calc(short[] z1[], float[] x[]) {
 
 
     public static void main(String[] args) {
-        System.out.println(sender_calc((short[]) z1, float[] x[]));
-        System.out.println("Hello World!");
+        for (int i = 0; i < z1.length; i++) {
+            for (int j = 0; j < x.length; j++) {
+                System.out.printf("%.4f", z[i], z[j]);
+            }
+        }
     }
 
 
