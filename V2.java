@@ -8,7 +8,6 @@ public class V2 {
     public static float x[] = new float[13];
     public static double z[][] = new double[z1.length][x.length];
     //Конец массивов
-    public static String check = null;
 
 //    public static short[] calc1(short z1[]){
 //        for(short i=0; i<z1.length; i++){
@@ -56,19 +55,30 @@ public static void main(String[] args) {
         x[i] = rand;
 //            System.out.println(x[i]);
     }
+    System.out.println("____________________________________________________________________________________________________________________________________________________________");
     for (int i=0; i<z1.length; i++){
         for(int j=0; j<x.length; j++){
             z[i][j] = calc3(i, j);
-            System.out.print("|");
-
+            int num = 15;
             String check = String.valueOf(z[i][j]);
-            int number = 10 - check.length();
-            System.out.print(" ".repeat(10 - number));
-
-            System.out.printf("%.4f", z[i][j]);
+            int end = check.indexOf(".") + 4;
+            String check2 = check.substring(end);
+            int number = num - check2.length() + 2;
+            String infinity = "Infinity";
+            if (check.equals(infinity)){
+                number = 1;
+            }
+            else{
+                number = num - check2.length();
+            }
             System.out.print("|");
-        }
+            System.out.print(" ".repeat(number));
+            System.out.printf("%.4f", z[i][j]);
+            System.out.print(" ".repeat(number));
+            }
+        System.out.print("|");
         System.out.println();
+        System.out.println("____________________________________________________________________________________________________________________________________________________________");
     }
 }
 
