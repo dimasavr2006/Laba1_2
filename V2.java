@@ -55,18 +55,18 @@ public static void main(String[] args) {
         x[i] = rand;
 //            System.out.println(x[i]);
     }
-    System.out.println("____________________________________________________________________________________________________________________________________________________________");
+    System.out.println("_______________________________________________________________________________________________________________________________________________________________________________");
     for (int i=0; i<z1.length; i++){
         for(int j=0; j<x.length; j++){
             z[i][j] = calc3(i, j);
             int num = 15;
             String check = String.valueOf(z[i][j]);
-            int end = check.indexOf(".") + 4;
+            int end = check.indexOf(".") + 5;
             String check2 = check.substring(end);
-            int number = num - check2.length() + 2;
+            int number = num - check2.length()-1;
             String infinity = "Infinity";
             if (check.equals(infinity)){
-                number = 1;
+                number = 2;
             }
             else{
                 number = num - check2.length();
@@ -78,7 +78,7 @@ public static void main(String[] args) {
             }
         System.out.print("|");
         System.out.println();
-        System.out.println("____________________________________________________________________________________________________________________________________________________________");
+        System.out.println("_______________________________________________________________________________________________________________________________________________________________________________");
     }
 }
 
