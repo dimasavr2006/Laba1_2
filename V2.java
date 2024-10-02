@@ -27,21 +27,21 @@ public class V2 {
 //        return x;
 //    }
 
-    public static double calc3(int i, int j){
-        double back;
-                if (i == 19){
-                    back = sin(log(sqrt(abs(x[j]))));
-                    return back;
-                }
-                else if (z1[i] == 5 || z1[i] == 7  || z1[i] == 9 || z1[i] == 15){
-                    back = tan(tan(tan(x[j])));
-                    return back;
-                }
-                else{
-                    back = log(pow((pow((pow((PI / (exp(x[j] + 0.5))), (pow((2 * (0.75 - x[j])), 3)))), 2)), 2));
-                    return back;
-                }
-    }
+public static double calc3(int i, int j){
+    double back;
+            if (z1[i] == 19){
+                back = sin(log(sqrt(abs(x[j]))));
+                return back;
+            }
+            else if (z1[i] == 5 || z1[i] == 7  || z1[i] == 9 || z1[i] == 15){
+                back = tan(tan(tan(x[j])));
+                return back;
+            }
+            else{
+                back = log(pow((pow((pow((PI / (exp(x[j] + 0.5))), (pow((2 * (0.75 - x[j])), 3)))), 2)), 2));
+                return back;
+            }
+}
 public static void main(String[] args) {
 
     for(short i=0; i<z1.length; i++){
